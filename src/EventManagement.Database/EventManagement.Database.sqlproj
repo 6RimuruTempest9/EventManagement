@@ -58,6 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="ForeignKeys" />
+    <Folder Include="Post" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Organizers.sql" />
@@ -73,5 +74,8 @@
     <Build Include="ForeignKeys\FK_Organizers_Events.sql" />
     <Build Include="ForeignKeys\FK_Speakers_Events.sql" />
     <Build Include="ForeignKeys\FK_Venues_Events.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Post\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
