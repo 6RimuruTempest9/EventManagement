@@ -54,9 +54,9 @@ INSERT INTO [dbo].[Organizers]
 		[dbo].[Organizers].[Last Name]
 	)
 VALUES
-	(1, N'Vitali', N'Talatai'),
-	(2, N'Dmitry', N'Lebeshkov'),
-	(3, N'Andrey', N'Slepukhin');
+	(N'Vitali', N'Talatai'),
+	(N'Dmitry', N'Lebeshkov'),
+	(N'Andrey', N'Slepukhin');
 GO
 
 --- Speakers
@@ -66,9 +66,9 @@ INSERT INTO [dbo].[Speakers]
 		[dbo].[Speakers].[Last Name]
 	)
 VALUES
-	(1, N'Vitali', N'Talatai'),
-	(2, N'Alexandr', N'Pushkin'),
-	(3, N'Vasily', N'Novikov');
+	(N'Vitali', N'Talatai'),
+	(N'Alexandr', N'Pushkin'),
+	(N'Vasily', N'Novikov');
 GO
 
 --- Events
