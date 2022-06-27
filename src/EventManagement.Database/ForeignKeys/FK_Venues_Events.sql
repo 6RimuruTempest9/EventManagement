@@ -1,0 +1,6 @@
+﻿ALTER TABLE [dbo].[Events]
+	ADD CONSTRAINT [FK_Events_Venues]
+	FOREIGN KEY ([VenueId])
+	REFERENCES [dbo].[Venues] ([Id])
+	ON UPDATE CASCADE
+	ON DELETE CASCADE

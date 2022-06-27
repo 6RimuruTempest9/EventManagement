@@ -1,0 +1,6 @@
+﻿ALTER TABLE [dbo].[Streets]
+	ADD CONSTRAINT [FK_Towns_Streets]
+	FOREIGN KEY ([TownId])
+	REFERENCES [dbo].[Towns] ([Id])
+	ON UPDATE CASCADE
+	ON DELETE CASCADE
