@@ -57,6 +57,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="ForeignKeys" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Organizers.sql" />
@@ -66,5 +67,11 @@
     <Build Include="Tables\Streets.sql" />
     <Build Include="Tables\Venues.sql" />
     <Build Include="Tables\Events.sql" />
+    <Build Include="ForeignKeys\FK_Countries_Towns.sql" />
+    <Build Include="ForeignKeys\FK_Towns_Streets.sql" />
+    <Build Include="ForeignKeys\FK_Streets_Venues.sql" />
+    <Build Include="ForeignKeys\FK_Organizers_Events.sql" />
+    <Build Include="ForeignKeys\FK_Speakers_Events.sql" />
+    <Build Include="ForeignKeys\FK_Venues_Events.sql" />
   </ItemGroup>
 </Project>
