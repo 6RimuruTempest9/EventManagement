@@ -16,19 +16,7 @@ namespace EventManagement.DataAccess.Databases.EntityFrameworkCore
 
         #region Properties
 
-        public DbSet<Country> Countries { get; set; }
-
         public DbSet<Event> Events { get; set; }
-
-        public DbSet<Organizer> Organizers { get; set; }
-
-        public DbSet<Speaker> Speakers { get; set; }
-
-        public DbSet<Street> Streets { get; set; }
-
-        public DbSet<Town> Towns { get; set; }
-
-        public DbSet<Venue> Venues { get; set; }
 
         #endregion
     }
