@@ -10,10 +10,10 @@
 
         public DateTime EndDate { get; set; }
 
-        public int VenueId { get; set; }
+        public string Venue { get; set; }
 
-        public int OrganizerId { get; set; }
+        public string Organizer { get; set; }
 
-        public int SpeakerId { get; set; }
+        public string Speaker { get; set; }
     }
 }
