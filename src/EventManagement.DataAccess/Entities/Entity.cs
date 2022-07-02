@@ -1,6 +1,6 @@
 ﻿namespace EventManagement.DataAccess.Entities
 {
-    internal class Entity
+    internal class Entity : IEntity
     {
         #region Properties
 
