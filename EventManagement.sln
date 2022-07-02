@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{73BEB961-F77
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "EventManagement.Database", "src\EventManagement.Database\EventManagement.Database.sqlproj", "{CC3CF2CB-390C-4C98-976B-FBCA79669D82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.DataAccess", "src\EventManagement.DataAccess\EventManagement.DataAccess.csproj", "{E2855624-EB4D-4521-83D5-E4708147249F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagement.DataAccess", "src\EventManagement.DataAccess\EventManagement.DataAccess.csproj", "{E2855624-EB4D-4521-83D5-E4708147249F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
