@@ -1,6 +1,6 @@
 ﻿namespace EventManagement.API.Models
 {
-    internal class Event
+    public class Event
     {
         #region Properties
 
