@@ -1,6 +1,6 @@
 ﻿namespace EventManagement.BusinessLogic.DataTransferObjects
 {
-    internal class EventDto : IDto
+    public class EventDto : IDto
     {
         #region Properties
 
