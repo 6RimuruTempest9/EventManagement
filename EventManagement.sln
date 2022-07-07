@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagement.DataAccess"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagement.BusinessLogic", "src\EventManagement.BusinessLogic\EventManagement.BusinessLogic.csproj", "{137B6AF8-8E9E-4B77-BD37-6D17EC678EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagement.API", "src\EventManagement.API\EventManagement.API.csproj", "{ACB87470-29C9-437B-8D62-4AC6436B88D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagement.API", "src\EventManagement.API\EventManagement.API.csproj", "{ACB87470-29C9-437B-8D62-4AC6436B88D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
