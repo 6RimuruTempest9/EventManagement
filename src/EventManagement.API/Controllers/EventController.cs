@@ -2,13 +2,15 @@
 using EventManagement.API.Models;
 using EventManagement.BusinessLogic.DataTransferObjects;
 using EventManagement.BusinessLogic.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace EventManagement.API.Controllers
 {
+    [Authorize]
     [ApiController]
-    [Route("events")]
+    [Route("[controller]")]
     public class EventController : Controller
     {
         #region Fields
@@ -32,7 +34,8 @@ namespace EventManagement.API.Controllers
 
         #region Methods
 
-        [HttpGet("getAll")]
+        [HttpGet]
+        [Route("[action]")]
         public async Task<IEnumerable<Event>> GetAll()
         {
             return await _eventService
@@ -41,7 +44,8 @@ namespace EventManagement.API.Controllers
                 .ToListAsync();
         }
 
-        [HttpGet("getById/{id}")]
+        [HttpGet]
+        [Route("[action]/{id}")]
         public async Task<Event> GetById(int id)
         {
             var eventDto = await _eventService.GetByIdAsync(id);
@@ -49,7 +53,8 @@ namespace EventManagement.API.Controllers
             return _mapper.Map<Event>(eventDto);
         }
 
-        [HttpPost("delete/{id}")]
+        [HttpPost]
+        [Route("[action]/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _eventService.DeleteAsync(id);
@@ -57,7 +62,8 @@ namespace EventManagement.API.Controllers
             return Ok();
         }
 
-        [HttpPost("update")]
+        [HttpPost]
+        [Route("[action]")]
         public async Task<IActionResult> Update([FromBody] Event @event)
         {
             var eventDto = _mapper.Map<EventDto>(@event);
@@ -67,7 +73,8 @@ namespace EventManagement.API.Controllers
             return Ok();
         }
 
-        [HttpPost("insert")]
+        [HttpPost]
+        [Route("[action]")]
         public async Task<IActionResult> Insert([FromBody] Event @event)
         {
             var eventDto = _mapper.Map<EventDto>(@event);
