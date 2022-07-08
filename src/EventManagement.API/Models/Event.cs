@@ -1,6 +1,6 @@
-﻿namespace EventManagement.BusinessLogic.DataTransferObjects
+﻿namespace EventManagement.API.Models
 {
-    public class EventDto : IDto
+    public class Event
     {
         #region Properties
 
