@@ -1,4 +1,4 @@
-# EventManagement
+# Event Management Project
 
 # Used Architectures
 1. N-Layer
@@ -20,3 +20,5 @@
 ![image](https://user-images.githubusercontent.com/102213694/178032257-95cb5c20-7769-4684-81fb-3a274a27b9d6.png)
 2. Run project.
 3. Profit!
+
+(c) Vitali Talatai
